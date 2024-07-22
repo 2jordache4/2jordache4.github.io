@@ -7,7 +7,7 @@
   /* background-color: #fff; */
 }
 
-li, a, button {
+li, a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -16,7 +16,7 @@ li, a, button {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content:stretch;
   color: #fff;
   background-color: #333;
   text-align: end;
