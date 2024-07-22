@@ -17,9 +17,9 @@ li, a {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #333;
   color: #fff;
-  text-align: center;
+  background-color: #333;
+  text-align: end;
   padding: 30px 10%;
 }
 
