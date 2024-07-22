@@ -21,15 +21,12 @@ header {
   padding: 30px 10%;
 }
 
-
 .jc {
   cursor: pointer;
-  color: white;
 }
 
 .nav__links {
   list-style: none;
-  color: red;
 }
 
 .nav__links li {
