@@ -16,6 +16,7 @@ li, a {
 header {
   display: flex;
   justify-content: space-evenly;
+  color: white;
   background-color: #333;
   text-align: end;
   padding: 30px 10%;
