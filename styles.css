@@ -29,12 +29,10 @@ header {
 
 .profile-pic {
   border-radius: 50%;
-  width: 80px; /* Example larger size */
-  height: 80px; /* Example larger size */
-  margin-right: 15px; /* Adjust space between the image and the text */
+  width: 80px; /* or any size you prefer */
+  height: 80px; /* keep width and height the same for a circular shape */
+  margin-right: 15px; /* space between image and text */
 }
-
-
 
 .jc {
   cursor: pointer;
