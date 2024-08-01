@@ -29,8 +29,8 @@ header {
 
 .profile-pic {
   border-radius: 50%;
-  width: 80px; /* or any size you prefer */
-  height: 80px; /* keep width and height the same for a circular shape */
+  width: 120px; /* or any size you prefer */
+  height: 120px; /* keep width and height the same for a circular shape */
   margin-right: 15px; /* space between image and text */
 }
 
