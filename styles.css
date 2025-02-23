@@ -19,8 +19,8 @@ header {
   align-items: center; /* Centers items vertically */
   color: white;
   background-color: #333;
-  height: 60px; /* Adjust as needed */
-  padding: 10px 10%; /* Reduced padding */
+  height: 20px; /* Adjust as needed */
+  /* padding: 10px 10%;  */
 }
 
 .profile-section {
