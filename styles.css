@@ -26,6 +26,7 @@ header {
 .profile-section {
   display: flex;
   align-items: center;
+  padding: 10px 10%; 
 }
 
 .profile-pic {
