@@ -23,6 +23,8 @@ header {
   background-color: #890000;
   height: 40px; 
   padding: 23px 1%; 
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .profile-section {
@@ -69,8 +71,20 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 30px;
-  gap: 20px; /* Space between photo and text */
+  padding: 15px;
+  gap: 20px; 
+}
+
+.about-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 350;
+  font-size: 30px;
+}
+
+.education-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 350;
+  font-size: 23px;
 }
 
 .profile {
@@ -80,18 +94,20 @@ header {
 }
 
 .profile-pic {
-  width: 150px; 
-  height: 200px; 
+  width: 285px; 
+  height: 350px; 
   border-radius: 0%; 
   object-fit: cover; 
-  border: 2px solid black;
+  border: 2.5px solid black;
 }
 
 .bio {
-  flex: 1; /* Takes up remaining space */
+  flex: 1; 
+  font-family: "Montserrat", sans-serif;
 }
 
+
 .bio p {
-  font-size: 16px; /* Adjust as needed */
-  line-height: 1.5; /* For readability */
+  font-size: 16px; 
+  line-height: 1.5; 
 }
