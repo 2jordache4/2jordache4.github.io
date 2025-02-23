@@ -32,6 +32,7 @@ header {
   width: 90px; /* or any size you prefer */
   height: 120px; /* keep width and height the same for a circular shape */
   margin-right: 15px; /* space between image and text */
+  align-self: flex-end;
 }
 
 .jc {
