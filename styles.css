@@ -6,27 +6,28 @@
   padding: 0;
 }
 
-li, a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: cyan;
+body {
+  background-color: #212121;      
+  color: #ffffff;                   
+  /* margin: 0;                       
+  padding: 0;                     
+  line-height: 1.6; */                
+  box-sizing: border-box;          
 } 
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centers items vertically */
-  color: white;
-  background-color: #333;
-  height: 20px; /* Adjust as needed */
-  padding: 15px 10%; 
+  align-items: center; 
+  color: #000000;
+  background-color: #890000;
+  height: 40px; 
+  padding: 23px 1%; 
 }
 
 .profile-section {
   display: flex;
-  align-items: left;
-  padding: 10px 10%; 
+  align-items: left; 
 }
 
 .profile-pic {
@@ -38,7 +39,9 @@ header {
 }
 
 .jc {
-  cursor: pointer;
+  /* cursor: pointer; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 350;
 }
 
 .nav__links {
@@ -52,8 +55,43 @@ header {
 
 .nav__links li a {
   transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: #ffffff;
+}
+
+.about-me {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px;
+  gap: 20px; /* Space between photo and text */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px; 
+  height: 200px; 
+  border-radius: 0%; 
+  object-fit: cover; 
+  border: 2px solid black;
+}
+
+.bio {
+  flex: 1; /* Takes up remaining space */
+}
+
+.bio p {
+  font-size: 16px; /* Adjust as needed */
+  line-height: 1.5; /* For readability */
 }
