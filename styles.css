@@ -67,6 +67,26 @@ header {
   color: #ffffff;
 }
 
+.links {
+  list-style: none;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.links li a {
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 350;
+  font-size: 16px;
+  color: white;
+}
+
+.links li a:hover {
+  color: #ffffff;
+}
+
 .about-me {
   display: flex;
   align-items: flex-start;
@@ -118,3 +138,66 @@ header {
   font-size: 16px; 
   line-height: 1.5; 
 }
+
+.contact_me {
+  display: inline;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  padding: 20px; 
+}
+.contact_me {
+  align-content: space-between;
+  flex: 1; 
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact_bme p {
+  align-content: space-between;
+  font-size: 16px; 
+  line-height: 1.5; 
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; 
+  padding: 40px 10%;
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; 
+  gap: 20px;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  width: 350px; 
+}
+
+.project-description {
+  flex: 1; 
+}
+
+.project-description h2 {
+  margin-bottom: 10px;
+}
+
+.project-description a {
+  color: #333;
+  text-decoration: none; 
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-description a:hover {
+  color: #0073e6; 
+}
+
