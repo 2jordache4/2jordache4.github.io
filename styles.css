@@ -74,6 +74,13 @@ header {
   padding: 15px;
   gap: 20px; 
 }
+.about-me-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 110px; 
+}
 
 .about-title {
   font-family: "Montserrat", sans-serif;
@@ -98,7 +105,7 @@ header {
   height: 350px; 
   border-radius: 0%; 
   object-fit: cover; 
-  border: 2.5px solid black;
+  border: 2.5px solid #890000;
 }
 
 .bio {
