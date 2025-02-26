@@ -30,67 +30,92 @@
         <div class="project-description">
             <h2>Network-Based EKF SLAM</h2>
             <p>
-                This project extends and applies my senior capstone by implementing 
-                EKF-SLAM on a robotic system using an Arduino, a server, and a custom Python processing pipeline. 
-                Unlike traditional SLAM implementations that rely on established libraries, I am manually implementing 
-                core functions to deepen my understanding of localization, mapping, and data processing. 
-                This approach increases complexity but I believe will be a valuable learning experience.
+                This project extends my senior capstone by implementing EKF-SLAM 
+                on a robotic system using an Arduino, a server, and a custom Python 
+                processing pipeline. Unlike traditional SLAM implementations, I'm 
+                manually developing core functions for localization, mapping, 
+                and data processing to deepen my understanding of these systems.
                 <br>
                 <br>
-                <b>Software</b>
+                <b>Current Progress</b>
                 <br>
-                As seen in the top image, the Arduino will transmit sensor data via WebSockets to a Python server. 
-                The server will then pass the data through IPC to a Python script, which will handle sensor fusion, 
-                SLAM calculations, and updating/storing the robot's position and map in a MySQL database. 
-                The frontend will communicate with the database through the server via WebSockets, enabling real-time 
-                updates and visualization of the robot's localization and map.
+                <ul>
+                    <li>Diagram Design: Created an initial diagram to visualize the system architecture and data flow.</li>
+                    <br>
+                    <li>Hardware Testing: Verified the functionality of individual hardware components,
+                        including the Arduino Uno R4, ultrasonic distance sensor (28015), 
+                        MPU-6050 gyroscope, DC motors, and L298N motor driver.</li>
+                    <br>
+                    <li>System Setup: Established communication between the Arduino and a Python server via WebSockets, 
+                        ensuring data transmission is functioning correctly.</li>
+                  </ul>
                 <br>
                 <br>
-                <b>Hardware</b>
+                <b>Next Steps</b>
                 <br>
-                The hardware setup is relatively simple: an Arduino Uno R4, an ultrasonic distance sensor (28015), 
-                two DC gear motors, an L298N motor driver, and an MPU-6050 gyroscope. They can be seen in the bottom image.
+                <ul>
+                    <li>Develop a database system to store robot localization and map data in MySQL.</li>
+                    <br>
+                    <li>Begin implementing sensor fusion and SLAM calculations in Python, using data from the Arduino.</li>
+                    <br>
+                    <li>Start working on a real-time visualization frontend for displaying the robot's localization and map.</li>
+                  </ul>
                 <br>
                 <br>
-                <b>Challenges</b>
-                <br>
-                One of the challenges of this project that I believe will have a big impact is the 
-                affordable hardware being used.
-                The Arduino Uno R4, ultrasonic distance sensor (28015), and MPU-6050 gyroscope 
-                are affordable but introduce limitations in accuracy, noise, and data reliability. 
-                This will make sensor fusion and noise filtering critical to achieving stable SLAM 
-                performance. Another challenge is the DC gear motors and L298N motor driver, which do 
-                not provide built-in encoder feedback. This makes odometry-based localization less reliable, 
-                so I plan on overcoming this using a fixed speed, and working in a step fashion. Thus, compensating for these 
-                inaccuracies through software-based error correction and probabilistic filtering will be an 
-                important aspect of the project. <br>
-                On the software side, manually implementing EKF-SLAM without existing libraries adds 
-                a ton of complexity. Efficiently handling real-time data transmission between the Arduino, 
-                Python server, and frontend requires optimized WebSockets and interprocess 
-                communication (IPC). Ensuring that data is processed fast enough to keep up with the 
-                robot's movement will be key to maintaining a responsive system. Despite the outcome of the project,
-                it will provide valuable insights into working with robotics systems while further deepening my 
-                understanding of SLAM, sensor fusion, and real-time robotics software.
             </p>
             <!-- <a href="link-to-project" target="_blank">View Project</a> -->
         </div>
     </div>
-    <div class="project-item">
-          <!-- <a href="link-to-project" target="_blank">View Project</a> -->
-      </div>
       <div class="project-item">
         <div class="project-image">
-            <img src="ar.jpg" alt="Project Image">
+            <iframe width="450" height="360" src="https://www.youtube.com/embed/yOVpz6ovK74?autoplay=1&loop=1&playlist=yOVpz6ovK74&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <img height = "360" wdith = "450"src="./assets/OOP.png" alt="Bottom Image">
         </div>
         <div class="project-description">
-            <h2>Project Title</h2>
+            <h2>'Blazebots' Multi-Agent Simulation</h2>
             <p>
-                Project info be like
+                The Blazebots simulation was a collaborative project focused
+                on simulating path planning and obstacle detection using a 
+                hybrid multi-agent system. In the simulation, blue and green
+                robots function as obstacle detectors, scanning
+                the environment and reporting detected obstacles to a central
+                system. The red robot then uses this real-time data to perform 
+                optimal path planning, navigating efficiently through the environment 
+                while avoiding obstacles. While there were areas for improvement, this 
+                project highlights the integration of multi-agent collaboration and 
+                path planning algorithms in a partially known dynamic environment.
             </p>
             <!-- <a href="link-to-project" target="_blank">View Project</a> -->
         </div>
+        
     </div>
   </div>
+  <div class="project-item">
+    <div class="project-description">
+        <h2>Senior Capstone</h2>
+        <p>
+            For my Math Senior Capstone, I focused on Extended Kalman 
+            Filter (EKF) Simultaneous Localization and Mapping (SLAM), 
+            an algorithm in robotics for enabling a robot to 
+            map its environment and track its own location. 
+            The core of my project involved deriving the mathematical formulas
+            behind EKF SLAM and reverse-engineering the process to fully 
+            understand the underlying principles and how each component 
+            contributes to the algorithm's effectiveness.
+
+            By working through the derivations of the prediction and update steps, 
+            I was able to break down the assumptions and linear approximations that
+            form the basis of the EKF approach. This in-depth analysis allowed me to 
+            uncover how the algorithm balances uncertainty in both the robot's 
+            location and the environment map. Through this reverse engineering,
+            I gained an understanding of how EKF SLAM optimizes both
+            the map-building and localization tasks in an uncertain environment.
+        </p>
+        <!-- <a href="link-to-project" target="_blank">View Project</a> -->
+    </div>
+    
+</div>
+</div>
 </section>
 </body>
 </html>
