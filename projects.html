@@ -24,25 +24,63 @@
   <section class="projects">
     <div class="project-item">
         <div class="project-image">
-            <img src="./assets/arduino_slam.jpg" alt="Project Image">
+            <img src="./assets/arduino_slam.jpg" alt="Top Image">
+            <img src="./assets/robot_prototype.jpeg" alt="Bottom Image">
         </div>
         <div class="project-description">
-            <h2>Project Title</h2>
+            <h2>Network-Based EKF SLAM</h2>
             <p>
-                Project info be like
+                This project extends and applies my senior capstone by implementing 
+                EKF-SLAM on a robotic system using an Arduino, a server, and a custom Python processing pipeline. 
+                Unlike traditional SLAM implementations that rely on established libraries, I am manually implementing 
+                core functions to deepen my understanding of localization, mapping, and data processing. 
+                This approach increases complexity but I believe will be a valuable learning experience.
+                <br>
+                <br>
+                <b>Software</b>
+                <br>
+                As seen in the top image, the Arduino will transmit sensor data via WebSockets to a Python server. 
+                The server will then pass the data through IPC to a Python script, which will handle sensor fusion, 
+                SLAM calculations, and updating/storing the robot's position and map in a MySQL database. 
+                The frontend will communicate with the database through the server via WebSockets, enabling real-time 
+                updates and visualization of the robot's localization and map.
+                <br>
+                <br>
+                <b>Hardware</b>
+                <br>
+                The hardware setup is relatively simple: an Arduino Uno R4, an ultrasonic distance sensor (28015), 
+                two DC gear motors, an L298N motor driver, and an MPU-6050 gyroscope. They can be seen in the bottom image.
+                <br>
+                <br>
+                <b>Challenges</b>
+                <br>
+                One of the challenges of this project that I believe will have a big impact is the 
+                affordable hardware being used.
+                The Arduino Uno R4, ultrasonic distance sensor (28015), and MPU-6050 gyroscope 
+                are affordable but introduce limitations in accuracy, noise, and data reliability. 
+                This will make sensor fusion and noise filtering critical to achieving stable SLAM 
+                performance. Another challenge is the DC gear motors and L298N motor driver, which do 
+                not provide built-in encoder feedback. This makes odometry-based localization less reliable, 
+                so I plan on overcoming this using a fixed speed, and working in a step fashion. Thus, compensating for these 
+                inaccuracies through software-based error correction and probabilistic filtering will be an 
+                important aspect of the project. <br>
+                On the software side, manually implementing EKF-SLAM without existing libraries adds 
+                a ton of complexity. Efficiently handling real-time data transmission between the Arduino, 
+                Python server, and frontend requires optimized WebSockets and interprocess 
+                communication (IPC). Ensuring that data is processed fast enough to keep up with the 
+                robot's movement will be key to maintaining a responsive system. Despite the outcome of the project,
+                it will provide valuable insights into working with robotics systems while further deepening my 
+                understanding of SLAM, sensor fusion, and real-time robotics software.
             </p>
             <!-- <a href="link-to-project" target="_blank">View Project</a> -->
         </div>
     </div>
     <div class="project-item">
-      <div class="project-image">
-          <img src="./assets/robot_prototype.jpeg" alt="Project Image">
-      </div>
           <!-- <a href="link-to-project" target="_blank">View Project</a> -->
       </div>
       <div class="project-item">
         <div class="project-image">
-            <img src="arduino_slam.jpg" alt="Project Image">
+            <img src="ar.jpg" alt="Project Image">
         </div>
         <div class="project-description">
             <h2>Project Title</h2>
