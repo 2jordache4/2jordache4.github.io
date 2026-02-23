@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './styles.css'
 
 import Stats from './components/stats'
-import Special from './components/special'
+import Sparc from './components/sparc'
 import About from './components/about'
 import Experience from './components/experience'
 import Education from './components/education'
@@ -11,7 +11,7 @@ import View from './components/view'
 
 const pages = {
   "STATS": <Stats />,
-  "S.P.E.C.I.A.L": <Special />,
+  "S.P.A.R.C": <Sparc />,
   "ABOUT": <About />,
   "EXPERIENCE": <Experience />,
   "EDUCATION": <Education />,
@@ -20,7 +20,7 @@ const pages = {
 }
 
 const subSections = {
-  STAT: ["STATS", "S.P.E.C.I.A.L", "ABOUT"],
+  STAT: ["STATS", "S.P.A.R.C", "ABOUT"],
   INV:  ["EXPERIENCE", "EDUCATION"],
   DATA: ["PROJECTS"],
   VIEW: ["VIEW"],
