@@ -1,16 +1,18 @@
 import { useState } from 'react'
 
 const experience = {
-  "Experience 1": {degree: "'26", 
-    description: "I went to my graduate program here", image: "./assets/ascii-art.png" },
-  "Experience 2": {degree: "'25", 
-    description: "I went to undergrad here.", image: "./assets/ascii-art.png" },
-  "Experience 3": {degree: "'24", 
-    description: "I went to undergrad here.", image: "./assets/ascii-art.png" },
+  "Lead Weekend Coordinator": {time: "'26", company: "The Robo Hub",
+    description: "I went to my graduate program here"},
+  "Robotics Controls & Systems Engineer": {time: "'25", company: "MyRide",
+    description: "I went to undergrad here."},
+  "Robotics Controls R&D Intern ": {time: "'24", company: "Boston University",
+    description: "I went to undergrad here."},
+  "Robotics Motion Planning R&D Intern ": {time: "'24", company: "Oregon UAS Accelerator",
+    description: "I went to undergrad here."},
 }
 
 function Experience() {
-  const [activeExp, setExpTab] = useState("Experience 1"); 
+  const [activeExp, setExpTab] = useState("Lead Weekend Coordinator"); 
     
   const handleExpTab = (expTab) => {
     setExpTab(expTab);
@@ -24,14 +26,14 @@ function Experience() {
             <a key={tab} className={tabClass} onClick={() => handleExpTab(tab)}>
             <span className='sparc-level'>
                 <div>{tab}</div>
-                <div>{experience[tab].degree}</div>
+                <div>{experience[tab].time}</div>
             </span>
             </a>
           );
         })}
       </div>
       <div className="sparc-desc-image">
-        <img className = 'sparc-image' src={experience[activeExp].image}></img>
+        <div className = 'sparc-desc'>{experience[activeExp].company}</div>
         <div className = 'sparc-desc'>{experience[activeExp].description}</div>
       </div>
     </div>
