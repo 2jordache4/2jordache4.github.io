@@ -13,6 +13,36 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #00FF26; /* Green */
+  --secondary-color: #30794099; /* Background Green */
+  --third-color: #00ff264b;
+}
+
+[data-theme="green"] {
+  --primary-color: #00FF26; 
+  --secondary-color: #30794099; 
+  --third-color: #00ff264b;
+}
+
+[data-theme="blue"] {
+  --primary-color: #0000ff; 
+  --secondary-color: #1c1c52a0;
+  --third-color: #0000ff4b;
+}
+
+[data-theme="orange"] {
+  --primary-color: #ffbb00; 
+  --secondary-color: #9e7f29ae;
+  --third-color: #ffbb004b;
+}
+
+[data-theme="white"] {
+  --primary-color: #ffffff; 
+  --secondary-color: #000000;
+  --third-color: #7878784b;
+}
+
 #root {
   width: 100%;
   margin: 0;
@@ -26,7 +56,7 @@ body {
   box-sizing: border-box;    
   width: 100%;
   min-height: 100vh;
-  /* animation: flicker 9s infinite;  this is kinda annoying, might want a setting in the view*/ 
+  /* animation: flicker 5s infinite; */
 } 
 
 body::after {
@@ -61,13 +91,13 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 2px solid #00FF26; 
+  border-bottom: 2px solid var(--primary-color); 
   
 }
 
 .nav-item {
   text-decoration: none;
-  color: #00FF26;
+  color: var(--primary-color);
   font-size: 3em;
 }
 
@@ -78,7 +108,7 @@ body::before {
   padding-right: .7em;
   text-shadow:
     2px 0 #00ff2699,
-    -3px 0 #30794099;
+    -3px 0 var(--seconday-color);
 }
 
 .nav-item.active span {
@@ -89,19 +119,19 @@ body::before {
 
   background:
     /* LEFT vertical */
-    linear-gradient(#00FF26 0 0)
+    linear-gradient(var(--primary-color) 0 0)
       left .55em / .05em .6em no-repeat,
 
     /* LEFT bottom horizontal */
-    linear-gradient(#00FF26 0 0)
+    linear-gradient(var(--primary-color) 0 0)
       left .55em / .55em .05em no-repeat,
 
     /* RIGHT vertical */
-    linear-gradient(#00ff26 0 0)
+    linear-gradient(var(--primary-color) 0 0)
       right .55em / .05em .6em no-repeat,
 
     /* RIGHT bottom horizontal */
-    linear-gradient(#00FF26 0 0)
+    linear-gradient(var(--primary-color) 0 0)
       right .55em / .55em .05em no-repeat;
 
 }
@@ -142,7 +172,7 @@ body::before {
   font-size: 1.5em;
   text-shadow:
     1px 0 #93080899,
-    -2px 0 #30794099;
+    -2px 0 var(--seconday-color);
   padding-right: .25em;
 }
 
@@ -158,28 +188,20 @@ body::before {
   display: flex;
   justify-content: space-between;
 
-  color: #00FF26;
-  border-top: 2px solid #00FF26;
-  background: #00ff264b;
+  color: var(--primary-color);
+  border-top: 2px solid var(--primary-color);
+  background: var(--secondary-color);
   z-index: 100;
   
 }
 
 .level-item {
-  color: #00FF26;
+  color: var(--primary-color);
   padding-right: 10em;
   font-size: 1.5em;
   text-shadow:
     2px 0 #00ff2699,
-    -3px 0 #30794099;
-
-  /* background:
-    linear-gradient(#00ff26 0 0)
-      5em .25em / 3em .6em no-repeat,
-
-    linear-gradient(#00ff264b 0 0)
-      5em .25em / 12em .6em no-repeat; */
-
+    -3px 0 var(--seconday-color);
 }
 
 .level-item::after{
@@ -189,33 +211,33 @@ body::before {
   width: 16em;
   height: .7em;
   right: 16em;
-  border: #00ff264b solid 1px;
+  border: var(--third-color) solid 1px;
   transform: translateY(-50%);
   background:
 
     /* LEFT bottom horizontal */
-    linear-gradient(#00FF26 0 0)
+    linear-gradient(var(--primary-color) 0 0)
       left / 5em 55em no-repeat;
 }
 
 .dob-item {
-  color: #00FF26;
+  color: var(--primary-color);
   padding-left: 1em;
   font-size: 1.5em;
-  border-left: 3px solid #00ff264b; /* Figure out how to make this taller */
+  border-left: 3px solid var(--third-color); /* Figure out how to make this taller */
   text-shadow:
     2px 0 #00ff2699,
-    -3px 0 #30794099;
+    -3px 0 var(--seconday-color);
 }
 
 .edu-item {
-  color: #00FF26;
+  color: var(--primary-color);
   padding-right: 1em;
   font-size: 1.5em;
-  border-right: 3px solid #00ff264b; /* Figure out how to make this taller */
+  border-right: 3px solid var(--third-color); /* Figure out how to make this taller */
   text-shadow:
     2px 0 #00ff2699,
-    -3px 0 #30794099;
+    -3px 0 var(--seconday-color);
 }
 
 .ascii {
@@ -229,19 +251,19 @@ body::before {
 
 .my-name {
   font-size: 2.5em;
-  color: #00FF26;
+  color: var(--primary-color);
   position: relative;
   text-shadow:
     2px 0 #00ff2699,
-    -3px 0 #30794099;
+    -3px 0 var(--seconday-color);
 }
 .rob-eng {
   font-size: 2em;
-  color: #00ff2688;
+  color: var(--third-color);
   position: relative;
   text-shadow:
     2px 0 #00ff2699,
-    -3px 0 #30794099;
+    -3px 0 var(--seconday-color);
 }
 .my-name-div {
   display: flex;
@@ -256,7 +278,6 @@ body::before {
 .body-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   height: 70vh;
 }
 
@@ -268,37 +289,25 @@ body::before {
   padding-top: 2em;
   height: 100%;
   width: 50%;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 
 .sparc-item {
   display: flex;
   flex-direction: row;
-  color: #00FF26;
+  color: var(--primary-color);
   font-size: 2.75em;
+  padding-bottom: .5em;
 }
 
 .sparc-item.active span {
-  background: #30794099;
-  border: .5px solid #00FF26;
+  background: var(--seconday-color);
+  border: .5px solid var(--primary-color);
   background-size: 100%;
   width: 100%;
   max-width: 100%;
 }
-
-
-/* .sparc-item.active::after{
-  content: "";
-  position: absolute;
-  border: #00ff26 solid 1px;
-  transform: translateY(-36%);
-  top: 25%;
-  width: 1em;
-  height: 1.15em;
-  right: 19.33em;
-  background:  #30794099
-} */
 
 .sparc-desc-image {
   display: flex;
@@ -311,7 +320,7 @@ body::before {
 
 .sparc-desc {
   font-size: 2em;
-  color: #00FF26;
+  color: var(--primary-color);
   padding-top: 1em;
 }
 
@@ -321,6 +330,15 @@ body::before {
   margin-left: auto; 
   margin-right: auto;
   width: 45%; 
+  animation: spinHorizontal 6s linear infinite;
+  transform-style: preserve-3d; 
+}
+.edu-image {
+  display: block; 
+  padding-top: 2em;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 35%; 
   animation: spinHorizontal 6s linear infinite;
   transform-style: preserve-3d; 
 }
@@ -337,6 +355,20 @@ body::before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-items: stretch;
   width: 100%;
 }
+
+.about-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pfp {
+  padding-top: 1em;
+  padding-left: 2em;
+  width: 20%; 
+  /* filter: url(#myDisplacementFilter); */
+}
+
+

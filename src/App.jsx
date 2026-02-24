@@ -27,10 +27,10 @@ const subSections = {
 }
 
 const subNavOffset = {
-  STAT: '3em',
-  INV: '20.5em',
-  DATA: '51.5em',
-  VIEW: '76.5em',
+  STAT: '3.4em',
+  INV: '23.5em',
+  DATA: '51.25em',
+  VIEW: '76.25em',
 }
 
 function App() {
