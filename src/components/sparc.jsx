@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 const sparc = {
-  "Systems Integration": {level: 7, description: "Clean" },
-  "Programming": {level: 9, description: "Pie" },
-  "AI": {level: 8, description: "Bear" },
-  "ROS": {level: 7, description: "Stinx" },
-  "Control": {level: 6, description: "Fresh" },
+  "Systems Integration": {level: 6, description: "Clean", image: "./assets/ascii-art.png" },
+  "Programming": {level: 9, description: "Pie", image: "./assets/ascii-art.png" },
+  "AI": {level: 8, description: "Bear", image: "./assets/ascii-art.png" },
+  "ROS": {level: 7, description: "Stinx", image: "./assets/ascii-art.png" },
+  "Control": {level: 7, description: "Fresh", image: "./assets/ascii-art.png" },
 }
 
 function Sparc() {
@@ -14,6 +14,7 @@ function Sparc() {
   const handleSparcTab = (sparcTab) => {
     setSparcTab(sparcTab);
   };
+
   return (
     <div className="body-div">
       <div className="sparc-words">
@@ -29,8 +30,9 @@ function Sparc() {
           );
         })}
       </div>
-      <div className="sparc-desc">
-        <div style={{color: 'white'}}>{sparc[activeSparc].description}</div>
+      <div className="sparc-desc-image">
+        <img className = 'sparc-image' src={sparc[activeSparc].image}></img>
+        <div className = 'sparc-desc'>{sparc[activeSparc].description}</div>
       </div>
     </div>
   )

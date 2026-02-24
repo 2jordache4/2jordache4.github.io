@@ -1,7 +1,12 @@
 function Projects() {
   return (
-    <div>
-      <h1 style={{color: 'white'}}>Projects</h1>
+    <div className="body-div">
+      <div>
+        <h1 style={{color: 'white'}}>Projects</h1>
+      </div>
+        <div>
+        <h1 style={{color: 'white'}}>Projects Right</h1>
+      </div>
     </div>
   )
 }

@@ -1,7 +1,12 @@
 function Education() {
   return (
-    <div>
-      <h1 style={{color: 'white'}}>Education</h1>
+    <div className="body-div">
+      <div>
+        <h1 style={{color: 'white'}}>Education</h1>
+      </div>
+        <div>
+        <h1 style={{color: 'white'}}>Education Right</h1>
+      </div>
     </div>
   )
 }
