@@ -17,7 +17,7 @@ function View() {
     setActiveColor(colorTab);
     document.body.setAttribute("data-theme", viewColor[colorTab]);
   }
-  
+
   return (
     <div className="body-div">
       <div className="sparc-words">
@@ -33,7 +33,7 @@ function View() {
         })}
       </div>
       <div>
-        <h1> hi pie</h1>
+        <h1 style={{color: 'white'}}> hi pie</h1>
       </div>
     </div>
   )
