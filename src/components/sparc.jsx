@@ -1,11 +1,33 @@
 import { useState } from 'react'
 
 const sparc = {
-  "Systems Integration": {level: 6, description: "Clean", image: "./assets/ascii-art.png" },
-  "Programming": {level: 9, description: "Pie", image: "./assets/ascii-art.png" },
-  "AI": {level: 8, description: "Bear", image: "./assets/ascii-art.png" },
-  "ROS": {level: 7, description: "Stinx", image: "./assets/ascii-art.png" },
-  "Control": {level: 7, description: "Fresh", image: "./assets/ascii-art.png" },
+  "Systems Integration": {level: 6, 
+    description: "The process of making all the pieces work as one. \
+    Combining hardware, software, and everything in between into \
+    a seamless, fully functioning system.", 
+    image: "./assets/ascii-art.png" },
+  
+  "Programming": {level: 9, 
+    description: "The backbone of any intelligent machine. \
+    eveloping the code and logic that governs behavior, from \
+    low-level hardware all the way up to complex task execution.", 
+    image: "./assets/ascii-art.png" },
+  
+  "AI": {level: 7, 
+    description: "Teaching machines to think, adapt,\
+     and decide. Applying machine learning and intelligent \
+     algorithms to enable perception, autonomy, and smarter decision-making.", 
+    image: "./assets/ascii-art.png" },
+  
+  "ROS": {level: 7, 
+    description: "Serves as the common middleware of robotics. Modular and\
+     flexible, it streamlines development and keeps complex systems talking to each other.", 
+    image: "./assets/ascii-art.png" },
+  
+  "Control": {level: 8, 
+    description: "Designing the algorithms and systems that keep machines stable,\
+    accurate, and responsive in any condition.", 
+    image: "./assets/ascii-art.png" },
 }
 
 function Sparc() {

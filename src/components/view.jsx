@@ -20,7 +20,7 @@ function View() {
 
   return (
     <div className="body-div">
-      <div className="sparc-words">
+      <div className="sparc-words" style={{borderRight: "4px solid var(--primary-color)"}}>
         {Object.keys(viewColor).map(tab => {
           const tabClass = activeColor === tab ? 'sparc-item active' : 'sparc-item';
           return (
@@ -32,8 +32,9 @@ function View() {
           );
         })}
       </div>
-      <div>
-        <h1 style={{color: 'white'}}> hi pie</h1>
+      <div className='sparc-words'>
+          <a className='sparc-item' href="./assets/Cousineau_Jordan_Resume.pdf" target="_blank">Resume</a>
+          <a className = 'sparc-item' href="https://www.linkedin.com/in/jordancousineau/">LinkedIn</a>
       </div>
     </div>
   )
