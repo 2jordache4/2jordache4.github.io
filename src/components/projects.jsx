@@ -31,8 +31,8 @@ const projects = {
   image: "./assets/wheel_soft_robot.png" },
 
   "Multi-Robot Exploration Simulation": {time: "September 2024 - December 2024", 
-  description: "This was a simple python simulation of two robots navigating an partially unknown environment.\
-  By providing the robots a floor plan they would explore the space and mark objects in red. The environment would \
+  description: "This was a python simulation of two robots navigating a partially unknown environment.\
+  By providing the robots a floor plan they would explore the space and mark obstacles in red. The environment would \
   be converted into a grid so graph exploration algorthms were easily-applicable, and the robots had a 8-tile radius \
   for sensing obstacles. This project was programmed in python and visualized using matplotlib.", 
   image: "./assets/multi-explor.png" },
