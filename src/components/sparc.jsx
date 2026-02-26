@@ -9,7 +9,7 @@ const sparc = {
   
   "Programming": {level: 9, 
     description: "The backbone of any intelligent machine. \
-    eveloping the code and logic that governs behavior, from \
+    Developing the code and logic that governs behavior, from \
     low-level hardware all the way up to complex task execution.", 
     image: "./assets/ascii-art.png" },
   
