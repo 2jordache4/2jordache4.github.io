@@ -31,7 +31,7 @@ const experience = {
     description: "Provided technical support to university staff and students through in-person, telephone, and \
     remotely as part of the University Information Services team at Pacific University. \
     As a senior student employee, I also assisted with onboarding and training new student staff, helped manage\
-    and assign tickets, and performed minor laptop hardware repairs."},
+    and assign tickets, and performed minor laptop repairs."},
   
   "Assistant Tennis Coach": {time: "2021 - 2024", company: "Forest Grove High School",
     description: "During my time at Pacific University, I also coached high school tennis."},
