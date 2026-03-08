@@ -2,12 +2,15 @@ import { useState } from 'react'
 
 const education = {
   "Boston University": {degree: "M.S.", major: "Robotics & Autonomous Systems",
-    description: "I attended BU from August 2024 to January 2026. \
+    minor:" ",
+    description: "I attended Boston University from August 2024 to January 2026. \
     I took notable courses such as: Robot Motion planning, Soft Robotics, Embedded Systems, Image & Video Processing, and Advanced Dynamics.", 
     image: "./assets/diploma_ms.png" },
-  "Pacific University": {degree: "B.S.", major: "Mathematics",
-    description: "I attended PU from 2020 to 2024. I was an active member of the mens tennis team and Women in Computer Science club. \
-    I took notable course such as: Linear Algebra, Probability and Statistics, Calculus 3, Data Structures, Databases, Theoretical Computer Science, and Human Computer Interaction.", 
+  "Pacific University": {degree: "B.S.", major: "Mathematics", minor:"Minor in Computer Science",
+    description: "I attended Pacific University from 2020 to 2024. I am a first-generation student and \
+    I was an active member of the mens tennis team and Women in Computer Science club. \
+    I took notable courses such as: Linear Algebra, Probability and Statistics, Calculus 3, \
+    Data Structures, Databases, Theoretical Computer Science, and Human Computer Interaction.", 
     image: "./assets/diploma_bs.png" },
 }
 
@@ -36,6 +39,7 @@ function Education() {
       <div className="sparc-desc-image">
         <img className = 'edu-image' src={education[activeEdu].image}></img>
         <div className = 'sparc-desc'>{education[activeEdu].degree} in {education[activeEdu].major}</div>
+        <div className = 'sparc-desc' style={{paddingTop: 0}}>{education[activeEdu].minor}</div>
         <div className = 'sparc-desc'>{education[activeEdu].description}</div>
       </div>
     </div>

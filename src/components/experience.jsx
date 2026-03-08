@@ -59,7 +59,7 @@ function Experience() {
       </div>
       <div className="sparc-desc-image">
         <div className = 'sparc-desc'>{experience[activeExp].company}</div>
-        <div className = 'sparc-desc'>{experience[activeExp].time}</div>
+        <div className = 'sparc-desc' style={{paddingTop: 0}}>{experience[activeExp].time}</div>
         <div className = 'sparc-desc'>{experience[activeExp].description}</div>
       </div>
     </div>

@@ -294,7 +294,6 @@ body::before {
   overflow-x: hidden;
 }
 
-
 .sparc-item {
   display: flex;
   flex-direction: row;
@@ -314,6 +313,7 @@ body::before {
 .sparc-desc-image {
   display: flex;
   flex-direction: column;
+  padding-top: 2em;
   height: 100%;
   width: 50%;
   justify-content: flex-start;
@@ -327,13 +327,12 @@ body::before {
   color: var(--primary-color);
   padding-top: 1em;
   padding-left: .5em;
-  padding-right: .1em;
+  padding-right: .2em;
   
 }
 
 .sparc-image {
   display: block; 
-  padding-top: 2em;
   margin-left: auto; 
   margin-right: auto;
   width: 45%; 
@@ -342,19 +341,20 @@ body::before {
 }
 .edu-image {
   display: block; 
-  padding-top: 2em;
+  border: solid 2px var(--primary-color);
   margin-left: auto; 
   margin-right: auto;
-  width: 35%; 
-  animation: spinHorizontal 6s linear infinite;
-  transform-style: preserve-3d; 
+  width: 45%; 
+  z-index: 1000;
 }
+
 .proj-image {
   display: block; 
   padding-top: 2em;
   margin-left: auto; 
   margin-right: auto;
   width: 60%; 
+  z-index: 1000;
 }
 @keyframes spinHorizontal {
   0% {
