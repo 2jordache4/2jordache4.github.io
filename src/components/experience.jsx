@@ -8,11 +8,11 @@ const experience = {
     to kids age K-8. During my time here I have created SOPs for both teachers and weekend operations, \
     and developed curriculum for our classes."},
 
-  "Robotics Engineer": {time: "2026 - Current", company: "MyRide",
-    description: "Currently working at an early-stage autonomous vehicle startup, \
-    contributing to the development of a self-driving retrofit kit. Responsibilities \
-    include codebase review of OSCC and ROS systems, with planned work toward full \
-    sensor integration."},
+  // "Robotics Engineer": {time: "2026 - Current", company: "MyRide",
+  //   description: "Currently working at an early-stage autonomous vehicle startup, \
+  //   contributing to the development of a self-driving retrofit kit. Responsibilities \
+  //   include codebase review of OSCC and ROS systems, with planned work toward full \
+  //   sensor integration."},
 
   "Robotics Controls R&D Intern ": {time: "Summer 2024", company: "Boston University",
     description: "I developed an interface for robotics students at Boston University \

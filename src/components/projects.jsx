@@ -1,7 +1,16 @@
 import { useState } from 'react'
 
 const projects = {
-  "Long Distance Solar UAV": {time: "September 2026 - December 2026", 
+  "Autonomous Vehicle Retrofit Project": {time: "January 2026 - Current", 
+  description: "Contributing to the development of a self-driving retrofit kit \
+  at an early-stage autonomous vehicle startup. Responsibilities include codebase\
+   review of OSCC and ROS systems, designing the autonomy stack architecture across\
+    Arduino and NVIDIA Jetson platforms, authoring modules within the autonomy stack\
+     for sensor integration and vehicle control, and utilizing CARLA to validate \
+     autonomy stack modules prior to hardware deployment.", 
+  image: "./assets/ascii-art.png" },
+
+  "Long Distance Solar UAV": {time: "September 2025 - December 2025", 
   description: "This was a research project inspired by my internship with Oregon UAS.\
   This project was to optimize what mode (Ascend, Descend, Soar, Charge/Float) a solar-powered uav should be in\
   to maximize distance in a long distance flight. This problem was modeled as a Mixed Integer Linear Problem \
@@ -9,12 +18,12 @@ const projects = {
   using matplotlib.", 
   image: "./assets/uav_plot.png" },
   
-  "2D Robot Arm Simulation": {time: "November 2026 - December 2026", 
+  "2D Robot Arm Simulation": {time: "November 2025 - December 2025", 
   description: "A simulation of the dynamics of a robot arm with spring, damping, and gravity forces \
   applied. This project simulated the dynamics using the forward euler method and was written in matlab.", 
   image: "./assets/planar_2-link.png" },
 
-  "Autonomous Mobile Robot": {time: "March 2026 - May 2026", 
+  "Autonomous Mobile Robot": {time: "March 2025 - May 2025", 
   description: "This robot was designed to follow the first person detected using a custom YOLOv8 model. \
   The Raspberry Pi and Arduino work together in a two-tier architecture: \
   The Arduino manages low-level hardware while the Pi handles the camera, \
