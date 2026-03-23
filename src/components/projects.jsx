@@ -12,7 +12,7 @@ const projects = {
 
   "Long Distance Solar UAV": {time: "September 2025 - December 2025", 
   description: "This was a research project inspired by my internship with Oregon UAS.\
-  This project was to optimize what mode (Ascend, Descend, Soar, Charge/Float) a solar-powered uav should be in\
+  This project was to optimize what mode (Ascend, Descend, Soar, Charge) a solar-powered uav should be in\
   to maximize distance in a long distance flight. This problem was modeled as a Mixed Integer Linear Problem \
   with dynamics, weather, and mode rules as constraints. The problem was solved by the gurobi library and modeled \
   using matplotlib.", 
