@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 const experience = {
   "Robotics Instructor & Weekend Coordinator": {time: "2024 - Current", company: "The Robo Hub",
-    description: "I am a lead teacher where I teach STEM classes, specifically programming and 3D modeling,\
+    description: "At The Robo Hub I teach STEM classes, specifically programming and 3D modeling,\
     to kids age K-8. During my time here I have created SOPs for both teachers and weekend operations, \
     and developed curriculum for our classes. Additionally, as the weekend coordinator, I handle all the scheduling, communication, financials,\
     and hosting of weekend events. This includes field trips, birthday parties, and open houses."},
@@ -39,7 +39,7 @@ const experience = {
 }
 
 function Experience() {
-  const [activeExp, setExpTab] = useState("Lead Weekend Coordinator"); 
+  const [activeExp, setExpTab] = useState("Robotics Instructor & Weekend Coordinator"); 
     
   const handleExpTab = (expTab) => {
     setExpTab(expTab);
