@@ -1,12 +1,13 @@
 import { useState } from 'react'
+// I dont believe this code is pushed, was trying to figure out how to have photos
+// if it has photos, otherwise no photo
 
 const experience = {
-  "Lead Weekend Coordinator": {time: "2024 - Current", company: "The Robo Hub",
-    description: "As the lead weekend coordinator, I handle all the scheduling, communication, financials,\
-     and hosting of weekend events. This includes field trips, birthday parties, and open houses. \
-     Additionally, I am a lead teacher where I teach STEM classes, specifically programming and 3D modeling,\
+  "Robotics Instructor & Weekend Coordinator": {time: "2024 - Current", company: "The Robo Hub",
+    description: "I am a lead teacher where I teach STEM classes, specifically programming and 3D modeling,\
     to kids age K-8. During my time here I have created SOPs for both teachers and weekend operations, \
-    and developed curriculum for our classes."},
+    and developed curriculum for our classes. Additionally, as the weekend coordinator, I handle all the scheduling, communication, financials,\
+    and hosting of weekend events. This includes field trips, birthday parties, and open houses."},
 
   // "Robotics Engineer": {time: "2026 - Current", company: "MyRide",
   //   description: "Currently working at an early-stage autonomous vehicle startup, \
