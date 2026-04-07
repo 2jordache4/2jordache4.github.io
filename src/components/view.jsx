@@ -33,7 +33,7 @@ function View() {
         })}
       </div>
       <div className='sparc-words'>
-          <a className='sparc-item' href="./assets/Cousineau_Jordan_Resume.pdf" target="_blank">Resume</a>
+          <a className='sparc-item' href="./assets/Jordan_Cousineau_Resume.pdf" target="_blank">Resume</a>
           <a className = 'sparc-item' href="https://www.linkedin.com/in/jordancousineau/">LinkedIn</a>
           <a className = 'sparc-item' href="https://github.com/2jordache4">Github</a>
       </div>

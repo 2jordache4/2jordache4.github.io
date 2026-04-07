@@ -7,8 +7,17 @@ const projects = {
    review of OSCC and ROS systems, designing the autonomy stack architecture across\
     Arduino and NVIDIA Jetson platforms, authoring modules within the autonomy stack\
      for sensor integration and vehicle control, and utilizing CARLA to validate \
-     autonomy stack modules prior to hardware deployment.", 
-  image: "./assets/ascii-art.png" },
+     autonomy stack modules prior to hardware deployment. The picture above is the benchtest mechanical gearshifter \
+     and power button being able to shift gears and activate the power button using a microcontroller, solonoid,\
+     and actuators.", 
+  image: "./assets/gear_shifter.png" },
+
+  "Single Inverted Pendulum on a Cart": {time: "March 2026 - April 2026", 
+  description: "Simulation of a single inverted pendulum on a cart to achieve \
+  equilibrium. This simulation utilizes LQR as the tuning measure, and achieves \
+  equilibrium from a downward position just over 10 seconds.", 
+  image: "./assets/cart_lqr.gif" },
+
 
   "Long Distance Solar UAV": {time: "September 2025 - December 2025", 
   description: "This was a research project inspired by my internship with Oregon UAS.\
@@ -20,8 +29,9 @@ const projects = {
   
   "2D Robot Arm Simulation": {time: "November 2025 - December 2025", 
   description: "A simulation of the dynamics of a robot arm with spring, damping, and gravity forces \
-  applied. This project simulated the dynamics using the forward euler method and was written in matlab.", 
-  image: "./assets/planar_2-link.png" },
+  applied. This project simulated the dynamics using the forward euler method and was originally written in matlab,\
+  which I rewrote in python using numpy and matplotlib.", 
+  image: "./assets/twolink.gif" },
 
   "Autonomous Mobile Robot": {time: "March 2025 - May 2025", 
   description: "This robot was designed to follow the first person detected using a custom YOLOv8 model. \
@@ -45,10 +55,17 @@ const projects = {
   be converted into a grid so graph exploration algorthms were easily-applicable, and the robots had a 8-tile radius \
   for sensing obstacles. This project was programmed in python and visualized using matplotlib.", 
   image: "./assets/multi-explor.png" },
+
+  "EKF SLAM Senior Capstone": {time: "September 2023 - May 2024", 
+  description: "Research capstone reverse-engineering the mathematical \
+  foundations of EKF SLAM, tracing how Bayesian inference, multivariate \
+  Gaussians, and Jacobian linearization work together to solve the simultaneous\
+  localization and mapping problem in robotics.", 
+  image: "./assets/slam_diagram.png" },
 }
 
 function Projects() {
-  const [activeProj, setProjTab] = useState("Long Distance Solar UAV"); 
+  const [activeProj, setProjTab] = useState("Autonomous Vehicle Retrofit Project"); 
     
   const handleProjTab = (projTab) => {
     setProjTab(projTab);
