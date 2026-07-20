@@ -388,14 +388,17 @@ body::before {
   padding-left: 1.5em;
   padding-right: 1.5em;
   align-content: center;
+  
 }
 
 .pfp {
+  display: block;
   float: left;
   padding-top: 1em;
   padding-left: 2em;
   width: 25%;
-  
+  background: none;
+  z-index: 1000;
 }
 
 .view-right {

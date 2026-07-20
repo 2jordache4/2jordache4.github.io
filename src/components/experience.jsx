@@ -45,7 +45,7 @@ const experience = {
 }
 
 function Experience() {
-  const [activeExp, setExpTab] = useState("Robotics Instructor & Weekend Coordinator"); 
+  const [activeExp, setExpTab] = useState("Fleet Operations Technician"); 
     
   const handleExpTab = (expTab) => {
     setExpTab(expTab);
