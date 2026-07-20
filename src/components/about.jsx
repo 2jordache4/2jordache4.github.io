@@ -2,14 +2,13 @@ function About() {
   return (
       <div className="about-body">
         <img className = 'pfp' src="./assets/jordan-pfp.png"></img>
-        <h1 className="about-paragraph">Hello and welcome to my website! <br></br> <br></br> 
-        My name is Jordan and I am a robotics engineer. I am originally from Salem, OR, but I now live in Boston. <br></br> <br></br> 
-        I have a lot of experience in education, but I am now looking to transition to robotics full-time! 
-        A better description of my experience and education is under the 'INV' tab, and my projects are under the 'DATA' tab. 
-        Under the "VIEW" tab you can change the UI color (my favorite being orange), and view my resume and LinkedIn.  <br></br> <br></br> 
-        If the design of the website didn't give it away, I do enjoy playing videos games! One of my favorites being the 'Fallout' series 
-        (of course I started another Fallout 4 playthrough after moving to Boston). 
-        Aside from video games, I also enjoy playing tennis and have been playing for about 8 years now.</h1>
+        <h1 className="about-paragraph">Welcome to my website! <br></br> <br></br> 
+        I am a robotics engineer. I was born and raised in Oregon, and now I now live in Boston. <br></br> <br></br> 
+        I currently work at Boston Dynamics, where I help ensure the success of Atlas, the humanoid robot. <br></br> <br></br> 
+        I enjoy playing video games, tennis, and going for a walk on a nice summer day. 
+        Bethesda games are some of my favorite games to play, and I have been playing Hades recently.
+
+        </h1>
         {/* <div>
         <h1 style={{color: 'white'}}>About Right</h1>
       </div> */}

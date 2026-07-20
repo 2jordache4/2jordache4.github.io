@@ -3,11 +3,16 @@ import { useState } from 'react'
 // if it has photos, otherwise no photo
 
 const experience = {
-  "Robotics Instructor & Weekend Coordinator": {time: "2024 - Current", company: "The Robo Hub",
+  "Fleet Operations Technician": {time: "2026 - Current", company: "Boston Dynamics",
+    description: "At Boston Dynamics I help manage, maintain, and triage the Atlas fleet. \
+    I work very closely with all the engineering teams of Atlas, which helps with the maintainence \
+    and documentation for the fleet."},
+
+  "Robotics Instructor & Weekend Coordinator": {time: "2024 - 2026", company: "The Robo Hub",
     description: "At The Robo Hub I teach STEM classes, specifically programming and 3D modeling,\
     to kids age K-8. During my time here I have created SOPs for both teachers and weekend operations, \
     and developed curriculum for our classes. Additionally, as the weekend coordinator, I handle all the scheduling, communication, financials,\
-    and hosting of weekend events. This includes field trips, birthday parties, and open houses."},
+    and hosting of weekend events."},
 
   // "Robotics Engineer": {time: "2026 - Current", company: "MyRide",
   //   description: "Currently working at an early-stage autonomous vehicle startup, \
@@ -15,7 +20,7 @@ const experience = {
   //   include codebase review of OSCC and ROS systems, with planned work toward full \
   //   sensor integration."},
 
-  "Robotics Controls R&D Intern ": {time: "Summer 2024", company: "Boston University",
+  "Robotics Intern ": {time: "Summer 2024", company: "Boston University",
     description: "I developed an interface for robotics students at Boston University \
     to interact with a multi-robot system. The project utilized ROS node communication \
     between robots and a motion capture (MOCAP) system, with the goal of implementing \
@@ -23,7 +28,7 @@ const experience = {
     built using PyQt5, and was designed to allow users to add robots, define zones \
     within the MOCAP space, and operate robots without interference from others sharing the environment."},
 
-  "Robotics Motion Planning R&D Intern ": {time: "Spring 2024", company: "Oregon UAS Accelerator",
+  "Robotics R&D Intern ": {time: "Spring 2024", company: "Oregon UAS Accelerator",
     description: "I collaborated on a path planning application in Python for a UAS at an accelerator-stage company, \
     implementing algorithms based on academic literature. Conducted independent research and literature review \
     to inform the design and implementation of the system, which was built as an early-stage prototype."},
@@ -35,7 +40,8 @@ const experience = {
     and assign tickets, and performed minor laptop repairs."},
   
   "Assistant Tennis Coach": {time: "2021 - 2024", company: "Forest Grove High School",
-    description: "During my time at Pacific University, I also coached high school tennis."},
+    description: "While I was in my undergrad program, I was also the assistant coach \
+    to the boys high school tennis team."},
 }
 
 function Experience() {

@@ -1,22 +1,22 @@
 import { useState } from 'react'
 
 const projects = {
-  "Autonomous Vehicle Retrofit Project": {time: "January 2026 - Current", 
-  description: "Contributing to the development of a self-driving retrofit kit \
-  at an early-stage autonomous vehicle startup. Responsibilities include codebase\
-   review of OSCC and ROS systems, designing the autonomy stack architecture across\
-    Arduino and NVIDIA Jetson platforms, authoring modules within the autonomy stack\
-     for sensor integration and vehicle control, and utilizing CARLA to validate \
-     autonomy stack modules prior to hardware deployment. The picture above is the benchtest mechanical gearshifter \
-     and power button being able to shift gears and activate the power button using a microcontroller, solonoid,\
-     and actuators.", 
-  image: "./assets/gear_shifter.png" },
+  // "Autonomous Vehicle Retrofit Project": {time: "January 2026 - Current", 
+  // description: "Contributing to the development of a self-driving retrofit kit \
+  // at an early-stage autonomous vehicle startup. Responsibilities include codebase\
+  //  review of OSCC and ROS systems, designing the autonomy stack architecture across\
+  //   Arduino and NVIDIA Jetson platforms, authoring modules within the autonomy stack\
+  //    for sensor integration and vehicle control, and utilizing CARLA to validate \
+  //    autonomy stack modules prior to hardware deployment. The picture above is the benchtest mechanical gearshifter \
+  //    and power button being able to shift gears and activate the power button using a microcontroller, solonoid,\
+  //    and actuators.", 
+  // image: "./assets/gear_shifter.png" },
 
-  "Single Inverted Pendulum on a Cart": {time: "March 2026 - April 2026", 
-  description: "Simulation of a single inverted pendulum on a cart to achieve \
-  equilibrium. This simulation utilizes LQR as the tuning measure, and achieves \
-  equilibrium from a downward position just over 10 seconds.", 
-  image: "./assets/cart_lqr.gif" },
+  // "Single Inverted Pendulum on a Cart": {time: "March 2026 - April 2026", 
+  // description: "Simulation of a single inverted pendulum on a cart to achieve \
+  // equilibrium. This simulation utilizes LQR as the tuning measure, and achieves \
+  // equilibrium from a downward position just over 10 seconds.", 
+  // image: "./assets/cart_lqr.gif" },
 
 
   "Long Distance Solar UAV": {time: "September 2025 - December 2025", 
@@ -65,7 +65,7 @@ const projects = {
 }
 
 function Projects() {
-  const [activeProj, setProjTab] = useState("Autonomous Vehicle Retrofit Project"); 
+  const [activeProj, setProjTab] = useState("Long Distance Solar UAV"); 
     
   const handleProjTab = (projTab) => {
     setProjTab(projTab);

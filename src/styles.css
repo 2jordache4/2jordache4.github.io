@@ -385,14 +385,17 @@ body::before {
   color: var(--primary-color);
   letter-spacing: 2px;
   line-height: 1.25;
-  padding-left: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  align-content: center;
 }
 
 .pfp {
   float: left;
   padding-top: 1em;
   padding-left: 2em;
-  width: 20%;
+  width: 25%;
+  
 }
 
 .view-right {
