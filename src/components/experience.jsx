@@ -5,20 +5,15 @@ import { useState } from 'react'
 const experience = {
   "Fleet Operations Technician": {time: "2026 - Current", company: "Boston Dynamics",
     description: "At Boston Dynamics I help manage, maintain, and triage the Atlas fleet. \
-    I work very closely with all the engineering teams of Atlas, which helps with the maintainence \
-    and documentation for the fleet."},
+    I am at the intersection of all the engineering teams, and help create and maintain playbooks related to the \
+    humanoid robot, Atlas."},
 
-  "Robotics Instructor & Weekend Coordinator": {time: "2024 - 2026", company: "The Robo Hub",
-    description: "At The Robo Hub I teach STEM classes, specifically programming and 3D modeling,\
-    to kids age K-8. During my time here I have created SOPs for both teachers and weekend operations, \
-    and developed curriculum for our classes. Additionally, as the weekend coordinator, I handle all the scheduling, communication, financials,\
-    and hosting of weekend events."},
+  "Weekend Manager & Robotics Instructor": {time: "2024 - 2026", company: "The Robo Hub",
+    description: "As the weekend coordinator, I handle all the scheduling, communication, financials,\
+    and hosting of weekend events. During my time here I have created SOPs for both teachers and weekend operations, \
+    and developed curriculum for our classes. Additionally, I teach STEM classes, specifically programming and 3D modeling,\
+    to kids age K-8."},
 
-  // "Robotics Engineer": {time: "2026 - Current", company: "MyRide",
-  //   description: "Currently working at an early-stage autonomous vehicle startup, \
-  //   contributing to the development of a self-driving retrofit kit. Responsibilities \
-  //   include codebase review of OSCC and ROS systems, with planned work toward full \
-  //   sensor integration."},
 
   "Robotics Intern ": {time: "Summer 2024", company: "Boston University",
     description: "I developed an interface for robotics students at Boston University \
@@ -40,8 +35,8 @@ const experience = {
     and assign tickets, and performed minor laptop repairs."},
   
   "Assistant Tennis Coach": {time: "2021 - 2024", company: "Forest Grove High School",
-    description: "While I was in my undergrad program, I was also the assistant coach \
-    to the boys high school tennis team."},
+    description: "While I was in my undergrad program, I was also the assistant coach to the towns \
+    high school boys tennis team."},
 }
 
 function Experience() {

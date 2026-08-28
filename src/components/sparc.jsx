@@ -26,7 +26,7 @@ const sparc = {
   
   "Control": {level: 8, 
     description: "Designing the algorithms and systems that keep machines stable,\
-    accurate, and responsive in any condition.", 
+    accurate, and responsive.", 
     image: "./assets/ascii-art.png" },
 }
 
