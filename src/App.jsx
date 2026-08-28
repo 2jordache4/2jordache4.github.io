@@ -35,7 +35,7 @@ const subNavOffset = {
 
 function App() {
   const [activeTop, setActiveTop] = useState("STAT");
-  const [activeSub, setActiveSub] = useState(subSections["STAT"][0]);
+  const [activeSub, setActiveSub] = useState(subSections["STAT"][2]);
 
   const handleTopNav = (tab) => {
     setActiveTop(tab);
